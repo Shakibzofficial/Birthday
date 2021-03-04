@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap');
+
+body {
+    font-family: 'Josefin Slab', serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/bg-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+/*    overflow: hidden;*/
+    position: relative;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+}
+.image {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: animate 2s linear;
+}
+
+@keyframes animate {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.one{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: -1;
+    animation: animate-2 2s linear;
+}
+@keyframes animate-2{
+    0%{
+        transform: translateY(-900px);
+    }
+    100%{
+        transform: translateY(0px;)
+    }
+}

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;700&display=swap');
+
+body {
+    font-family: 'Josefin Slab', serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+section {
+    width: 100%;
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*    background-position: bottom;*/
+}
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-title{
+    color: black;
+}
+.YES {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.7);
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+}
+
+.NO {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+}
+
+.date {
+    align-self: center;
+    text-align: center;
+    color: black;
+}
+.no-title-1{
+    color: #2C5F2D;
+    display: none;
+    font-weight: bold;
+}
+
+#yes:checked ~ .buttons ~ .date {
+    display: inline-block !important;
+}
+#no:checked ~ .buttons ~ .no-title-1{
+    display: inline-block !important;
+}
+.YES-2 {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(0, 128, 0, 0.7);
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+}
+
+.NO-2 {
+    display: inline-block;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.7);
+    padding: 10px 40px;
+    border-radius: 50px;
+    color: white;
+}
+.no-title-2{
+    color: #2C5F2D;
+    display: none;
+    font-weight: bold;
+}
+#yes-2:checked ~ .buttons-2 ~ .text{
+    display: inline-block !important;
+}
+#no-2:checked ~ .buttons-2 ~ .no-title-2{
+    display: inline-block !important;
+}
+
+.click{
+    color: #445253;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+
